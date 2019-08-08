@@ -1,0 +1,85 @@
+.grid-m{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.startup,.create,.choose,.partners .content, .card .text{
+	grid-template-rows: auto auto auto auto;
+}
+
+.startup .buttons,.CTA,.choose,.partners,.tools,
+.testimonials,.footer,.content .services,
+.tools .card,.testimonials .content,.info .profile,
+.footer .bottom, .top .about,.top .contact,
+.top .form-area, .form-area form{
+	grid-template-rows: auto auto;
+}
+
+.available{
+	grid-template-rows: repeat(5,auto);
+}
+
+.CTA .content,.choose .head,.choose .content,
+.services .text,.tools .content, 
+.content .advantages,.testimonials .head,
+.testimonials .content .info,.footer .top,
+.contact .info{
+	grid-template-rows: auto auto auto;
+}
+
+.bottom .social-links{
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto;
+}
+
+
+@media screen and (min-width: 500px){
+	.grid-t{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+	}
+
+	.create{
+		grid-column: 1;
+	}
+
+	.choose{
+		grid-column: 2;
+	}
+
+	.partners .content{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+	}
+
+	.tools{
+		grid-template-rows: auto;
+	}
+
+	.testimonials .content,.footer .bottom{
+		grid-template-rows: auto;
+	}
+
+}
+
+@media screen and (min-width: 992px){
+	.grid-d{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto;
+	}
+
+	.CTA{
+		grid-template-columns: auto auto;
+	}
+
+}
+
+
+
+
+
+
+
+
